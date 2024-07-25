@@ -1,15 +1,22 @@
 .featured{
     width: 100%;
-    max-width: 1024px;
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     z-index: 1;
   }
-  
+  .pic-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    gap: 1rem;
+  }
   .featuredItem{
     position: relative;
     color: white;
+    width: 95%;
     border-radius: 10px;
     overflow: hidden;
     height: 250px;

@@ -6,9 +6,18 @@
     list-style:none;
     box-sizing:border-box;
     text-decoration:none;
+    box-sizing: border-box;
   }
   html{
     scroll-behavior: smooth;
   }
-
+body{
+  background-color: rgb(245, 243, 243);
+}
+html, body {
+  overflow-x: hidden;
   
+}
+::-webkit-scrollbar{
+  display:none;
+}

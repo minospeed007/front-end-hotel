@@ -8,18 +8,19 @@
   }
   
   .headerContainer {
-    width: 100%;
-    max-width: 1024px;
+    width: 100vw;
     margin: 20px 0px 100px 0px;
   }
-  
+  .flight-link{
+    color: white;
+  }
   .headerContainer.listMode {
     margin: 20px 0px 0px 0px;
   }
   
   .headerList {
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     align-items:center;
     gap: 40px;
     margin-bottom: 50px;
@@ -28,6 +29,7 @@
   .headerListItem {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 10px;
   }
   

@@ -6,14 +6,15 @@ import {
     faPlane,
     faTaxi,
   } from "@fortawesome/free-solid-svg-icons";
-  import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-  import {SearchContext} from '../../context/searchContext'
+   import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+ import {SearchContext} from '../../context/searchContext'
 
   import "./searchHeader.css";
   import { DateRange } from "react-date-range";
   import { useState,useContext } from "react";
-  import "react-date-range/dist/styles.css"; // main css file
-  import "react-date-range/dist/theme/default.css"; // theme css file
+  import "react-date-range/dist/styles.css"; 
+  import "react-date-range/dist/theme/default.css"; 
   import { format } from "date-fns";
   import { useNavigate, } from "react-router-dom";
 
@@ -54,8 +55,9 @@ import {
     };
   
     return(
+      <div className="container">
         <div className="headerSearch">
-                <div className="headerSearchItem">
+                <div className="headerSearchItems">
                   <FontAwesomeIcon icon={faBed} className="headerIcon" />
                   <input
                     type="text"
@@ -64,7 +66,7 @@ import {
                     onChange={(e) => setDestination(e.target.value)}
                   />
                 </div>
-                <div className="headerSearchItem">
+                <div className="headerSearchItems">
                   <FontAwesomeIcon icon={faCalendarDays} className="headerIcon" />
                   <span
                     onClick={() => setOpenDate(!openDate)}
@@ -72,7 +74,7 @@ import {
                   >{`${format(dates[0].startDate, "MM/dd/yyyy")} to ${format(
                     dates[0].endDate,
                     "MM/dd/yyyy"
-                  )}`}</span>
+                  )}`} </span>
                   {openDate && (
                     <DateRange
                       editableDateInputs={true}
@@ -84,11 +86,11 @@ import {
                     />
                   )}
                 </div>
-                <div className="headerSearchItem">
+                <div className="headerSearchItems">
                 <FontAwesomeIcon icon={faPerson} className="headerIcon" />
                 <span
                   onClick={() => setOpenOptions(!openOptions)}
-                  className="headerSearchText"
+                  className="headerSearchText" 
                 >{`${options.adult} adult · ${options.children} children · ${options.room} room`}</span>
                 {openOptions && (
                   <div className="options">
@@ -158,11 +160,13 @@ import {
                   </div>
                 )}
               </div>
-              <div className="headerSearchItem">
+              <div>
                 <button className="headerBtn" onClick={handleSearch}>
                   Search
                 </button>
-              </div>
+                </div>
+
+            </div>
             </div>
     )
 }

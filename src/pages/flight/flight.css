@@ -1,0 +1,308 @@
+.flight-div {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 4rem;
+  }
+  h1{
+    margin-bottom: 2rem;
+  }
+  .oneWay-h2{
+    margin-right: 3rem;
+    font-size: 1.6rem;
+  }
+  .book-now-div{
+    margin-left: 3rem;
+  }
+  .pay-div{
+    margin-left: 1.5rem;
+    margin: .5rem;
+    height: 3rem;
+    width: 50%;
+  }
+  
+  .hotel-hr{
+    width: 100%;
+    border: 1px solid rgb(241, 238, 238);
+  }
+  .h2-offer-div{
+    height: 2.7rem;
+    margin-left: 1rem;
+  }
+  .oneWay-h4-div{
+    flex-direction: column;
+    width: 55%;
+    display: flex;
+    height: 10rem;
+
+  }
+  .flight-divs{
+    display:flex;
+    gap:1rem;
+    margin-left: .5rem;
+  }
+  .oneWay-img-div{
+    display:flex;
+   margin: .3rem;
+   width: 98%;
+   margin-top: 0;
+
+    gap:1rem;
+  }
+  
+  .oneWay-img-div{
+    display: flex;
+    justify-content: space-between;
+  }
+  .paris-img{
+    height: 10rem;
+    width: 12rem;
+  }
+  .paris-img-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+  }
+  .book-now-btns{
+    width: 6rem;
+    height: 1.7rem;
+    border: .1rem;
+    font-size: .7rem;
+    background-color: rgb(231, 152, 5);
+  }
+  .pay-small-small{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .img-div-oneWay{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: rgb(218, 214, 214);
+    margin-right: .5rem;
+
+  }
+  .oneWay-img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+  }
+  .oneWay-root-div{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 40rem;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .oneway-container{
+    display: flex;
+    align-items: center;
+    height: 20rem; 
+    justify-content: flex-start;
+    width: 100%;
+
+  }
+  .oneway-h{
+    color: rgb(109, 107, 107);
+  }
+  .oneWay-small-div{
+    display: flex;
+    justify-content: flex-start;
+   gap:.5rem;
+   margin-left: .3rem;
+   margin-top: .7rem;
+
+  }
+  
+.oneWay-div{
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  width: 100%;
+  gap: .5rem;
+
+}
+.offer-root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 38rem;
+  gap: 1rem;
+  flex-direction: column;
+}
+.flight-hr{
+  border: 2px solid rgb(16, 16, 240);
+}
+.offer-div{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+}
+.paper-root{
+  width: 100%;
+  display: grid;
+grid-template-columns: 1fr 1fr;
+place-items: center;
+place-content: center;
+padding-top: .5rem;
+padding-bottom: .5rem;
+background-color: rgb(235, 235, 243);
+}
+.paper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  background-color: rgb(77, 58, 58);
+  margin-left: .5rem;
+  margin-right: .5rem;
+  height: 13rem;
+
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+.flight-img-div {
+  width: 100%;
+  height: 300px;
+  background-image: url('../../assets/holiday.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-start; 
+  color: white; 
+  font-size: 24px; 
+  font-weight: bold; 
+  margin: 0;
+}
+
+.text-overlay {
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start; 
+  justify-content: center; 
+  width: 100% !important;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 10px 20px; 
+  padding: 0;
+  box-sizing: border-box;
+}
+.link-btn-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+.search-btn{
+  width: 80%;
+}
+.book-btn{
+    width: 10rem;
+    height: 2.5rem;
+    margin-top: 2rem;
+    background-color: red;
+    border-radius: .2rem;
+    color: white;
+    margin-left: 6rem;
+}
+.overlay-div {
+  text-align: left; 
+  margin-left: 10%;
+  height: 200px;
+  width: 100%;
+}
+
+.overlay-div h2, .overlay-div span {
+  margin: 0; 
+  line-height: .7; 
+}
+.earn-h2{
+    font-style:italic ;
+}
+.bonus{
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+}
+.earn-text{
+    font-style: italic;
+}
+.earn {
+  margin-left: 9%;
+  margin-top: .9rem;
+}
+
+  
+  .flight-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  label >p{
+    margin-bottom: 1rem;
+  }
+  label {
+    display: block;
+  }
+  
+  .flight-p {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .flight-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: .2rem;
+  }
+  .headerSearchItem {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: .2rem;
+height: 2.3rem;
+    background-color: white;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .headerSearchText {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  button {
+    grid-column: span 2;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

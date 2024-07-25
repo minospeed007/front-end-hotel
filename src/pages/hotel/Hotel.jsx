@@ -142,7 +142,7 @@ setOpenModal(true)
         <MailList />
         <Footer />
         </div>)}
-        {openModal &&(<Reserve setOpen={setOpenModal} hotelId={id}/>)}
+        {openModal &&(<Reserve setOpen={setOpenModal} hotelId={id} hotelTitle={data?.title}/>)}
     </div>
   );
 };

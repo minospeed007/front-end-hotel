@@ -25,6 +25,7 @@ useEffect(()=>{
 
   return (
     <div className="featured">
+      <div className='pic-div'>
       {loading ? (<h3>Loading.. </h3>): (<>
         <div className="featuredItem">
         <img
@@ -60,9 +61,10 @@ useEffect(()=>{
           
           <h2>{data[2]} Properties</h2>
         </div>
-      </div>
+        </div>
    
       </>)}
+      </div>
     </div>
   );
 };

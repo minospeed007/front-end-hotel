@@ -5,7 +5,12 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    width: 97%;
     margin-bottom: 20px;
+    align-items: center;
+  }
+  .siPrice{
+    margin-right: .5rem;
   }
   
   .siImg {
@@ -87,6 +92,7 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    margin-right: 1rem;
   }
   
   .siPrice{

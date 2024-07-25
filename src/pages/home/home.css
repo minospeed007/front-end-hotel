@@ -6,6 +6,24 @@
   }
   
   .homeTitle{
-    float:left;
+    text-align: center;
     font-size: 20px;
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+   
+   
+  }
+  .bottom-nav{
+    width: 100%;
+    border: 1px solid rgb(219, 215, 215);
+    margin-top: 3rem;
+    margin-bottom:2rem ;
+  }
+
+  .container-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
   }

@@ -1,21 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import './index.js'
+import './index.css'
 import {Provider} from 'react-redux';
 import store from './store'
-import {SearchContextProvider} from './context/searchContext'
-import {AuthContextProvider} from './context/authContext'
+import {SearchContextProvider} from './context/searchContext';
+import {AuthContextProvider} from './context/authContext';
+import {FlightProvider }from './context/flightContext';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
+      <FlightProvider>
     <AuthContextProvider>
     <SearchContextProvider>
     <App />
     </SearchContextProvider >
     </AuthContextProvider>
+    </FlightProvider>
     </Provider>
   </React.StrictMode>
 );

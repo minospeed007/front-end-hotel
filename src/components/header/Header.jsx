@@ -13,7 +13,7 @@ import { useState,useContext } from "react";
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { format } from "date-fns";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 import {SearchContext} from '../../context/searchContext'
 
 
@@ -65,7 +65,9 @@ const {dispatch}=useContext(SearchContext)
           </div>
           <div className="headerListItem">
             <FontAwesomeIcon icon={faPlane} />
-            <span>Flights</span>
+           <Link to='/search_flight'> 
+           <span className='flight-link'>Flights</span>
+           </Link>
           </div>
           <div className="headerListItem">
             <FontAwesomeIcon icon={faCar} />
@@ -87,7 +89,7 @@ const {dispatch}=useContext(SearchContext)
             </h1>
             <p className="headerDesc">
               Get rewarded for your travels – unlock instant savings of 10% or
-              more with a free Lamabooking account
+              more with a free PlanetTour account
             </p>
             
           </>

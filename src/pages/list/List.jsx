@@ -31,7 +31,7 @@ const handleClick=()=>{
     <div>
     <Navbar />
     <Header type="list" />
-    <div className="listContainer">
+
       <div className="listWrapper">
         <div className="listSearch">
           <h1 className="lsTitle">Search</h1>
@@ -101,12 +101,16 @@ const handleClick=()=>{
         </div>
         <div className="listResult">
         {loading ? ('loadin..') :(<>
-        {data?.map((item)=>(<><SearchItem item={item} key={item?._id}/> </> ))}
+        {data?.map((item)=>(<>
+        <div className="search-div">
+        <SearchItem item={item} key={item?._id}/>
+        </div>
+         </> ))}
       </>)}
         </div>
       </div>
     </div>
-  </div>);
+  );
 };
 
 export default List;

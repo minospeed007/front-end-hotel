@@ -16,6 +16,7 @@ const images= [
 ]
 
   return (
+    <div className='lContainerf'>
     <div className="pList">
       {loading ? ('loading'):(<div className='pList'>
         {data.length > 0 && images.map && images.map((img,i)=>(
@@ -28,7 +29,9 @@ const images= [
           </div>
         ))}
       </div>)}
-      </div>) 
+      </div>
+      </div>
+      ) 
 };
 
 export default PropertyList;

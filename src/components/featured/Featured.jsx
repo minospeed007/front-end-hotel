@@ -9,7 +9,7 @@ const Featured = () => {
 
 const fetchData= async ()=>{
   try{
-  const res=  await axios.get("http://localhost:5000/api/hotels/countByCity?cities=berlin,london,paris")
+  const res=  await axios.get("https://planettour.onrender.com/api/hotels/countByCity?cities=berlin,london,paris")
   setData(res?.data)
 console.log(res?.data)
   }catch(error){

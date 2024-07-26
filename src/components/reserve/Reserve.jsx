@@ -12,7 +12,7 @@ const Reserve=({setOpen, hotelId,hotelTitle})=>{
     const [selectedRooms, setSelectedRooms]=useState([])
 
     const {dates}=useContext(SearchContext)
-    const {data,loading,error} =useFetch(`http://localhost:5000/api/hotels/room/${hotelId}`)
+    const {data,loading,error} =useFetch(`https://planettour.onrender.com/api/hotels/room/${hotelId}`)
     console.log(hotelTitle, 'hotel from reserve component');
 const navigate=useNavigate()
 const getDatesInRange=(startDate,endDate)=>{

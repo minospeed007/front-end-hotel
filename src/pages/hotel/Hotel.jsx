@@ -26,7 +26,7 @@ const navigate=useNavigate()
   const [open, setOpen] = useState(false);
   const [openModal,setOpenModal]=useState(false)
   
-const {data,error,loading}=useFetch(`http://localhost:5000/api/hotels/find/${id}`)
+const {data,error,loading}=useFetch(`https://planettour.onrender.com/api/hotels/find/${id}`)
 const {dates,options}=useContext(SearchContext)
 console.log("adult", options.adult)
 const {user}=useContext(AuthContext)

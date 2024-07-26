@@ -1,6 +1,4 @@
 import "./propertyList.css";
-import {useState,useEffect} from 'react'
-import axios from 'axios'
 import useFetch from '../hooks/useFetch'
 
 const PropertyList = () => {

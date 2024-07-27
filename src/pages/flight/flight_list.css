@@ -73,6 +73,9 @@
   font-weight: bold;
   margin-left: .5rem;
 }
+.full-price{
+  margin-left:1rem;
+}
 .full-price2{
   color: rgb(141, 138, 138);
   font-weight: bold;
